@@ -1,0 +1,23 @@
+{
+  "name": "dourou-jobs",
+  "version": "0.0.1",
+  "description": "Manage dourou jobs",
+  "main": "src/index.js",
+  "author": "jrb <jrb.youssef@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "knex": "^1.0.2",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "pm2 start src/index.js --name dourou-jobs --watch --ignore-watch='node_modules'"
+  }
+}
